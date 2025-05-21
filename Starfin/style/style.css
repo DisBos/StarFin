@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url(/fonts/rubik-variablefont_wght-webfont.woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+  
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Rubik', 'Sans-serif';
+    font-weight: 400;
+    line-height: 1.1;
+    background-image: url(../img/bg.f14e794960cff514.png);
+    background-repeat: no-repeat;
+}
+
+.header{
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(129, 216, 208, .2);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contact-top {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 8px;
+}
+
+.contact-top img{
+    rotate: 180deg;
+}
+
+
+
+.contact-tel__link {
+    position: relative;
+}
+
+.contact-tel__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 101%;
+    transform: translateY(-50%);
+    left: -16px;
+    background: url(../img/icon-phone-mal.png);
+    background-size: contain;
+    background-position: center center;
+    width: 12px;
+    height: 20px;
+}
+
+.contact-bottom {
+    font-size: 14px;
+    color: #6e807a;
+}
+.account-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
+}
+.account-actions__link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 17px 0 rgba(51, 187, 174, .5);
+    border-radius: 10px;
+    max-width: 550px;
+    height: auto;
+    padding: 20px;
+}
+
+.manager-link {
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    background-color: #FF680A;
+    border: 1px solid #e38e58;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px 60px;
+    box-shadow: 0 4px 8px #4646f952;
+    transition: transform 0.3s ease, box-shadow 0.1s ease;
+    text-align: center;
+}
+
+.logon-link,
+.payment-link {
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    background-color: #FF680A;
+    border: 1px solid #e38e58;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px 60px;
+    box-shadow: 0 4px 8px #4646f952;
+    transition: transform 0.3s ease, box-shadow 0.1s ease;
+    
+}
+
+.button-link:hover {
+    background-color: #fd9a5c;
+}
+
+.button-link:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.details {
+    text-align: center;
+}
+
+
+@media (max-width: 450px) {
+
+    .manager-link {
+        font-size: 14px;
+        padding: 15px 20px;
+    }
+
+    .logon-link,
+    .payment-link {
+        font-size: 14px;
+        
+    }
+
+
+    .details {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
